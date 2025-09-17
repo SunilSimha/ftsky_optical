@@ -1,0 +1,39 @@
+===============================================================================
+
+        # IMAGE and GALFIT CONTROL PARAMETERS
+
+        A) /home/sunil/Desktop/FRB/GALFIT/F160W_30mas/FRB190608_cutout.fits  # Input data image (FITS file)
+B) out.fits  # Output data image block
+C) none  # Sigma image name (made from data if blank or 'none')
+D) psffile.fits cdkfile.txt  # Input PSF file
+E) 9  # PSF fine sampling factor
+F) /home/sunil/Desktop/FRB/GALFIT/F160W_30mas/badpix_190608.fits  #Bad pixel mask
+G) none  # File with parameter constraints (ASCII file)
+H) 0 311 0 311   # Image region to fit (xmin xmax ymin ymax)
+I) 300 300 # Size of convolution box (x y)
+J) 25.000000  # Photometric zeropoint (mag)
+K) 0.064185 0.064185 # Plate scale (dx dy) [arcsec/pixel]
+O) regular   # Display type (regular, curses, both)
+P) 0 # Choose: 0=optimize, 1=model, 2=imgblock, 3=subcomps
+
+# INITIAL FITTING PARAMETERS
+# Component number: 1
+0) sersic # Component type
+1) 156 156 1 1 # position x y
+3) 15.788792 1 # Integrated magnitude
+4) 50.000000 1 # effective radius (pix)
+5) 4.000000 1 # sersic index
+6) 0.0000 0 # ----
+7) 0.0000 0 # ----
+8) 0.0000 0 # ----
+9) 0.600000 1 # Axis ratio (b/a)
+10) 0.000000 1 # Position angle (PA) [deg: Up=0, left =90]
+Z) 0 # Skip this model? (yes=1,no=0)
+
+# Component number: 2
+0) sky # component type
+1) 0.000000 1 # Sky background
+2) 0 0 # dsky/dx
+3) 0 0 # dsky/dy
+Z) 0 # Skip this model
+================================================================================
